@@ -29,6 +29,15 @@ PRODUCT_PACKAGES += \
     update_verifier \
     update_engine_sideload
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 34
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 31
+
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
