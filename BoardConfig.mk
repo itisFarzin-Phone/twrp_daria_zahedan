@@ -114,3 +114,8 @@ TW_NO_FASTBOOT_BOOT := true
 
 # USB
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+
+# Brightness
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 2047
+TW_DEFAULT_BRIGHTNESS := 1200
