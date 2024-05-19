@@ -19,13 +19,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-service
 
 PRODUCT_PACKAGES += \
-    bootctrl.mt6877
-
-PRODUCT_SHARED_BOOT_CONTROL_HAL  := \
     bootctrl.mt6877 \
-    libgptutils \
-    libz \
-    libcutils
+    bootctrl.mt6877.recovery
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
