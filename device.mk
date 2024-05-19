@@ -33,3 +33,8 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
+
+# Health HAL
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-service \
+    android.hardware.health@2.0-impl
