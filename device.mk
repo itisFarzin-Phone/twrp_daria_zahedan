@@ -20,8 +20,14 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 PRODUCT_PACKAGES += \
-    bootctrl.mt6877 \
+    android.hardware.boot@1.2-mtkimpl.recovery \
+    android.hardware.boot@1.0-impl-1.2-mtkimpl
+
+PRODUCT_PACKAGES += \
     bootctrl.mt6877.recovery
+
+PRODUCT_PACKAGES += \
+    bootctl
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
@@ -44,15 +50,6 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     android.hardware.fastboot@1.0-impl-mock.recovery \
     fastbootd
-
-# Health HAL
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-service \
-    android.hardware.health@2.1-impl
-
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl
 
 # Keymaster
 TARGET_RECOVERY_DEVICE_MODULES += \
