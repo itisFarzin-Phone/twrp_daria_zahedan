@@ -20,11 +20,13 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-mtkimpl \
     android.hardware.boot@1.2-mtkimpl.recovery \
     android.hardware.boot@1.0-impl-1.2-mtkimpl
 
 PRODUCT_PACKAGES += \
-    bootctrl.mt6877.recovery
+    bootctrl \
+    bootctrl.recovery
 
 PRODUCT_PACKAGES += \
     bootctl
@@ -54,8 +56,10 @@ PRODUCT_PACKAGES += \
 # Keymaster
 TARGET_RECOVERY_DEVICE_MODULES += \
     libkeymaster4 \
-    libkeymaster41
+    libkeymaster41 \
+    libpuresoftkeymasterdevice
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
